@@ -55,7 +55,7 @@ func readSets(cases int) []int {
 		l := readNewLine()
 		set, err := strconv.Atoi(l)
 		if err != nil {
-			panic(fmt.Errorf("unable to value: %s", err))
+			panic(fmt.Errorf("unable to get value: %s", err))
 		}
 		sets = append(sets, set)
 	}
